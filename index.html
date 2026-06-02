@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechNova Computer Training Center - Master the future of technology with industry-leading courses in programming, web development, data science, cybersecurity and more.">
+    <title>TechNova | Premier Computer Training Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-cube-wrap">
+            <div class="loader-cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+        <p class="loader-text">Loading APEX...</p>
+    </div>
+
+    <!-- Floating 3D Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" id="nav-logo">
+                <div class="logo-3d-icon">
+                    <div class="logo-cube">
+                        <div class="logo-face lf-front">A</div>
+                        <div class="logo-face lf-back">E</div>
+                        <div class="logo-face lf-left">X</div>
+                        <div class="logo-face lf-right">P</div>
+                        <div class="logo-face lf-top"></div>
+                        <div class="logo-face lf-bottom"></div>
+                    </div>
+                </div>
+                <span class="logo-text">AP<span class="logo-highlight">EX</span></span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#courses" class="nav-link" data-section="courses">Courses</a>
+                <a href="#features" class="nav-link" data-section="features">Why Us</a>
+                <a href="#testimonials" class="nav-link" data-section="testimonials">Reviews</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <a href="#contact" class="nav-cta" id="nav-cta">Login Now</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-shapes">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-in">
+                    <span class="badge-dot"></span>
+                    2026 Admissions Open For 10th to 12th and College Students
+                </div>
+                <h1 class="hero-title animate-in">
+                    APEX<br>
+                    <span class="gradient-text">Computer Training Center</span>
+                </h1>
+                <p class="hero-subtitle animate-in">
+                    Admissions are open for certificates and Diploma Courses for students of
+                    Secondary , High Secondary and Graduate Levels also.Build your future 
+                    with modern computer education and practical training. 
+                </p>
+                <div class="hero-cta-group animate-in">
+                    <a href="#courses" class="btn btn-primary" id="hero-explore-btn">
+                        <span>Explore Courses</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#about" class="btn btn-glass" id="hero-learn-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <span>Learn More</span>
+                    </a>
+                </div>
+                <div class="hero-stats animate-in">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2000">0</span>+
+                        <span class="stat-label">Students Trained</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5000">0</span>+
+                        <span class="stat-label">School Students</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="95">0</span>%
+                        <span class="stat-label">Placement Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-in">
+                <div class="hero-3d-scene">
+                    <div class="monitor-3d">
+                        <div class="monitor-screen">
+                            <div class="code-lines">
+                                <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">future</span> = <span class="code-keyword">computer</span> <span class="code-func">learn</span>();</div>
+                                <div class="code-line"><span class="code-keyword">if</span> (future.<span class="code-func">isReady</span>()) {</div>
+                                <div class="code-line">&nbsp;&nbsp;<span class="code-var">career</span>.<span class="code-func">launch</span>(<span class="code-string">"🚀"</span>);</div>
+                                <div class="code-line">}</div>
+                                <div class="code-line"><span class="code-comment">// Your journey starts here</span></div>
+                                <div class="code-line"><span class="code-keyword">class</span> <span class="code-class">APEX</span> {</div>
+                                <div class="code-line">&nbsp;&nbsp;<span class="code-func">transform</span>(student) {</div>
+                                <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-string">"success"</span>;</div>
+                                <div class="code-line">&nbsp;&nbsp;}</div>
+                                <div class="code-line">}</div>
+                            </div>
+                        </div>
+                        <div class="monitor-stand"></div>
+                        <div class="monitor-base"></div>
+                    </div>
+                    <div class="orbit-ring ring-1">
+                        <div class="orbit-icon">💻</div>
+                    </div>
+                    <div class="orbit-ring ring-2">
+                        <div class="orbit-icon">🤖</div>
+                    </div>
+                    <div class="orbit-ring ring-3">
+                        <div class="orbit-icon">☁️</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Locations</span>
+                <h2 class="section-title">Tilakchak & <span class="gradient-text">Gourangapur</span></h2>
+                <p class="section-subtitle">Home center at Gourangapur, Nangulrara, Khanankul, Hooghly and Another Town Center at Tilakchak, Helan, Hooghly, WB.  </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card animate-on-scroll" id="about-card-mission">
+                    <div class="about-card-inner">
+                        <div class="about-icon-wrap">
+                            <div class="about-icon">🎯</div>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To bridge the digital divide by providing accessible, high-quality computer education that prepares students for real-world careers in technology.</p>
+                    </div>
+                </div>
+                <div class="about-card animate-on-scroll" id="about-card-vision">
+                    <div class="about-card-inner">
+                        <div class="about-icon-wrap">
+                            <div class="about-icon">🔭</div>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To be the leading computer training institution known for innovation, excellence, and producing industry-ready professionals who drive technological advancement.</p>
+                    </div>
+                </div>
+                <div class="about-card animate-on-scroll" id="about-card-approach">
+                    <div class="about-card-inner">
+                        <div class="about-icon-wrap">
+                            <div class="about-icon">⚡</div>
+                        </div>
+                        <h3>Our Approach</h3>
+                        <p>Hands-on, project-based learning with real industry tools. Our small batch sizes ensure personalized attention and mentorship for every student.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Courses</span>
+                <h2 class="section-title">JOB-Level <span class="gradient-text">Computer Courses</span></h2>
+                <p class="section-subtitle">Choose from our courses-section of programs designed to take you from beginner to professional.</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card animate-on-scroll" id="course-web-dev">
+                    <div class="course-card-inner">
+                        <div class="course-card-front">
+                            <div class="course-icon-3d">
+                                <div class="course-cube">
+                                    <div class="c-face c-front">📊</div>
+                                    <div class="c-face c-back"></div>
+                                    <div class="c-face c-left"></div>
+                                    <div class="c-face c-right"></div>
+                                    <div class="c-face c-top"></div>
+                                    <div class="c-face c-bottom"></div>
+                                </div>
+                            </div>
+                            <h3 class="course-title">ADCA & Basics</h3>
+                            <p class="course-brief">HTML, CSS, Paint, Ms Ofices, Pagemaker, Photoshop</p>
+                            <div class="course-meta">
+                                <span class="course-duration">⏱ 1 Year/6 Months</span>
+                                <span class="course-level">📊 Beginner to Advanced</span>
+                            </div>
+                        </div>
+                        <div class="course-card-back">
+                            <h3>What You'll Learn</h3>
+                            <ul>
+                                <li>Ms WORD</li>
+                                <li>Ms EXCEL</li>
+                                <li>Ms POWERPOINT</li>
+                                <li>Photoshop</li>
+                                <li>HTML</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card animate-on-scroll" id="course-python">
+                    <div class="course-card-inner">
+                        <div class="course-card-front">
+                            <div class="course-icon-3d">
+                                <div class="course-cube">
+                                    <div class="c-face c-front">🌐</div>
+                                    <div class="c-face c-back"></div>
+                                    <div class="c-face c-left"></div>
+                                    <div class="c-face c-right"></div>
+                                    <div class="c-face c-top"></div>
+                                    <div class="c-face c-bottom"></div>
+                                </div>
+                            </div>
+                            <h3 class="course-title">DCA & Basics</h3>
+                            <p class="course-brief">Buissness Level Excel, Tally, MS Office, Internet</p>
+                            <div class="course-meta">
+                                <span class="course-duration">⏱ 1 Year/6 Months</span>
+                                <span class="course-level">📊 Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-card-back">
+                            <h3>What You'll Learn</h3>
+                            <ul>
+                                <li>Ms OFFICES</li>
+                                <li>MS EXCEL</li>
+                                <li>TALLY</li>
+                                <li>INTERNET</li>
+                                <li>HTML</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card animate-on-scroll" id="course-cyber">
+                    <div class="course-card-inner">
+                        <div class="course-card-front">
+                            <div class="course-icon-3d">
+                                <div class="course-cube">
+                                    <div class="c-face c-front">🛡️</div>
+                                    <div class="c-face c-back"></div>
+                                    <div class="c-face c-left"></div>
+                                    <div class="c-face c-right"></div>
+                                    <div class="c-face c-top"></div>
+                                    <div class="c-face c-bottom"></div>
+                                </div>
+                            </div>
+                            <h3 class="course-title">Cybersecurity</h3>
+                            <p class="course-brief">Ethical Hacking, Network Security, Forensics</p>
+                            <div class="course-meta">
+                                <span class="course-duration">⏱ 6 Months</span>
+                                <span class="course-level">📊 Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="course-card-back">
+                            <h3>What You'll Learn</h3>
+                            <ul>
+                                <li>Network security fundamentals</li>
+                                <li>Ethical hacking & penetration testing</li>
+                                <li>Security audits & compliance</li>
+                                <li>Incident response & forensics</li>
+                                <li>Industry certifications prep</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card animate-on-scroll" id="course-cloud">
+                    <div class="course-card-inner">
+                        <div class="course-card-front">
+                            <div class="course-icon-3d">
+                                <div class="course-cube">
+                                    <div class="c-face c-front">☁️</div>
+                                    <div class="c-face c-back"></div>
+                                    <div class="c-face c-left"></div>
+                                    <div class="c-face c-right"></div>
+                                    <div class="c-face c-top"></div>
+                                    <div class="c-face c-bottom"></div>
+                                </div>
+                            </div>
+                            <h3 class="course-title">Cloud Computing</h3>
+                            <p class="course-brief">AWS, Azure, GCP, Docker, Kubernetes</p>
+                            <div class="course-meta">
+                                <span class="course-duration">⏱ 5 Months</span>
+                                <span class="course-level">📊 Beginner to Advanced</span>
+                            </div>
+                        </div>
+                        <div class="course-card-back">
+                            <h3>What You'll Learn</h3>
+                            <ul>
+                                <li>Cloud architecture & design</li>
+                                <li>AWS/Azure/GCP services</li>
+                                <li>Containerization with Docker</li>
+                                <li>Kubernetes orchestration</li>
+                                <li>Cloud certification prep</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card animate-on-scroll" id="course-graphic">
+                    <div class="course-card-inner">
+                        <div class="course-card-front">
+                            <div class="course-icon-3d">
+                                <div class="course-cube">
+                                    <div class="c-face c-front">🎨</div>
+                                    <div class="c-face c-back"></div>
+                                    <div class="c-face c-left"></div>
+                                    <div class="c-face c-right"></div>
+                                    <div class="c-face c-top"></div>
+                                    <div class="c-face c-bottom"></div>
+                                </div>
+                            </div>
+                            <h3 class="course-title">UI/UX & Graphic Design</h3>
+                            <p class="course-brief">Figma, Photoshop, Illustrator, Design Systems</p>
+                            <div class="course-meta">
+                                <span class="course-duration">⏱ 4 Months</span>
+                                <span class="course-level">📊 Beginner</span>
+                            </div>
+                        </div>
+                        <div class="course-card-back">
+                            <h3>What You'll Learn</h3>
+                            <ul>
+                                <li>UI/UX design principles</li>
+                                <li>Figma & design tools mastery</li>
+                                <li>Brand identity creation</li>
+                                <li>Responsive design systems</li>
+                                <li>Portfolio development</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card animate-on-scroll" id="course-office">
+                    <div class="course-card-inner">
+                        <div class="course-card-front">
+                            <div class="course-icon-3d">
+                                <div class="course-cube">
+                                    <div class="c-face c-front">📋</div>
+                                    <div class="c-face c-back"></div>
+                                    <div class="c-face c-left"></div>
+                                    <div class="c-face c-right"></div>
+                                    <div class="c-face c-top"></div>
+                                    <div class="c-face c-bottom"></div>
+                                </div>
+                            </div>
+                            <h3 class="course-title">Computer Fundamentals & Office</h3>
+                            <p class="course-brief">MS Office, Tally, Internet, Email, Typing</p>
+                            <div class="course-meta">
+                                <span class="course-duration">⏱ 3 Months</span>
+                                <span class="course-level">📊 Beginner</span>
+                            </div>
+                        </div>
+                        <div class="course-card-back">
+                            <h3>What You'll Learn</h3>
+                            <ul>
+                                <li>Computer basics & OS</li>
+                                <li>MS Word, Excel, PowerPoint</li>
+                                <li>Tally & accounting software</li>
+                                <li>Internet & email proficiency</li>
+                                <li>Professional typing speed</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary btn-sm">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Why APEX</span>
+                <h2 class="section-title">The <span class="gradient-text">APEX</span> Advantage</h2>
+                <p class="section-subtitle">Discover what sets us apart from traditional training centers.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item animate-on-scroll" id="feature-1">
+                    <div class="feature-number">01</div>
+                    <div class="feature-content">
+                        <h3>Expert-Led Training</h3>
+                        <p>Learn from Sujit Manna 10+ years of real-world experience.</p>
+                    </div>
+                </div>
+                <div class="feature-item animate-on-scroll" id="feature-2">
+                    <div class="feature-number">02</div>
+                    <div class="feature-content">
+                        <h3>Easy to learn</h3>
+                        <p>Build real-world applications and portfolios. Every course includes capstone projects that showcase your skills.</p>
+                    </div>
+                </div>
+                <div class="feature-item animate-on-scroll" id="feature-3">
+                    <div class="feature-number">03</div>
+                    <div class="feature-content">
+                        <h3>Flexible Scheduling</h3>
+                        <p>Morning, evening, and weekend batches available. Learn at your own pace with both online and offline options.</p>
+                    </div>
+                </div>
+                <div class="feature-item animate-on-scroll" id="feature-4">
+                    <div class="feature-number">04</div>
+                    <div class="feature-content">
+                        <h3>School level Learning</h3>
+                        <p>Class V to Class X with School syllabus.</p>
+                    </div>
+                </div>
+                <div class="feature-item animate-on-scroll" id="feature-5">
+                    <div class="feature-number">05</div>
+                    <div class="feature-content">
+                        <h3>Delhi Board Certificate</h3>
+                        <p>Government-recognized certificates and preparation for international certifications (AWS, Google, Microsoft).</p>
+                    </div>
+                </div>
+                <div class="feature-item animate-on-scroll" id="feature-6">
+                    <div class="feature-number">06</div>
+                    <div class="feature-content">
+                        <h3>Available 3 Month Courses</h3>
+                        <p>State-of-the-art computer labs with high-speed internet, latest software, and 24/7 lab access for enrolled students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Teacher</span>
+                <h2 class="section-title">SUJIT <span class="gradient-text">MANNA</span></h2>
+                <p class="section-subtitle">10+ years experience in Sekenedarpur High School and 18+ years experience on Computer Teaching</p>
+            </div>
+            <div class="testimonials-carousel" id="testimonials-carousel">
+                <div class="testimonial-track" id="testimonial-track">
+                    <div class="testimonial-card" id="testimonial-1">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"TechNova completely changed my career trajectory. I went from knowing nothing about coding to landing a full-stack developer role at a top startup within 8 months of completing my course."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">RP</div>
+                            <div class="author-info">
+                                <strong>Rahul Patel</strong>
+                                <span>TCS gitobitan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" id="testimonial-2">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"The cybersecurity course was incredibly comprehensive. The hands-on labs and real-world scenarios prepared me perfectly for my CEH certification. I passed on the first attempt!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">SK</div>
+                            <div class="author-info">
+                                <strong>Sneha Kumari</strong>
+                                <span>Computer Teacher at High school</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" id="testimonial-3">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"As a working professional, the flexible evening batches were a lifesaver. The Python & Data Science course helped me transition from marketing to a data analyst role with a 60% salary hike."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">AM</div>
+                            <div class="author-info">
+                                <strong>Amit Mishra</strong>
+                                <span>Work in America</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" id="testimonial-4">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"The instructors at TechNova don't just teach — they mentor. The placement support was exceptional. I got placed in my dream company even before completing the course!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">PD</div>
+                            <div class="author-info">
+                                <strong>Priya Devi</strong>
+                                <span>Engineer at Hydrabad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" id="carousel-prev" aria-label="Previous testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </button>
+                    <div class="carousel-dots" id="carousel-dots"></div>
+                    <button class="carousel-btn next-btn" id="carousel-next" aria-label="Next testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Start Your <span class="gradient-text">Journey Today</span></h2>
+                <p class="section-subtitle">Have questions? Ready to enroll? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-item" id="contact-location">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Gourangapur, Nangulpara<br>Khanankul, Hooghly<br>PIN - 712406</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" id="contact-phone">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 9547543695<br>+91 8535890733</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" id="contact-email">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>sujitgourangapur@gmail.com<br>sujitapex@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" id="contact-hours">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h4>Time</h4>
+                            <p>Mon-Friday: 11:00 AM - 9:00 PM<br>Sun-Sat: 7:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="form-name">Full Name</label>
+                            <input type="text" id="form-name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-phone">Phone Number</label>
+                            <input type="tel" id="form-phone" placeholder="Enter phone number" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email">Email Address</label>
+                        <input type="email" id="form-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-course">Course Interested In</label>
+                        <select id="form-course" required>
+                            <option value="">Select a course</option>
+                            <option value="web-dev">ADCA</option>
+                            <option value="python">DCA</option>
+                            <option value="cyber">TALLY</option>
+                            <option value="cloud">MS OFFICES</option>
+                            <option value="design">C, C++</option>
+                            <option value="office">Computer Basics</option>
+                            <option value="office">Photoshop</option>
+                            <option value="office">Internet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Your Message</label>
+                        <textarea id="form-message" placeholder="Tell us about your goals..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">AP<span class="logo-highlight">EX</span></span>
+                    </div>
+                    <p>Ratani Gandhi Computer Institute is a government-registered computer training center that offers certificate and diploma courses for secondary, higher secondary, and graduate students. The institute provides practical computer education, including special courses for science students from Class 5 to Class 10 according to the school syllabus.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" id="social-fb" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" id="social-tw" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" id="social-ig" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" class="social-link" id="social-li" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" id="social-yt" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#0a0a1a"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#features">Why TechNova</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="#courses">ADCA</a></li>
+                        <li><a href="#courses">DCA</a></li>
+                        <li><a href="#courses">TALLY</a></li>
+                        <li><a href="#courses">MS OFFICES</a></li>
+                        <li><a href="#courses">C, C++</a></li>
+                        <li><a href="#courses">Computer Basics</a></li>
+                        <li><a href="#courses">Photoshop</a></li>
+                        <li><a href="#courses">Internet</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Career Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 APEX Computer Training Center. All rights reserved.</p>
+                <p>Founder Sujit Manna Gourangapur</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Widget -->
+    <div class="whatsapp-widget" id="whatsapp-widget">
+        <!-- Chat Popup -->
+        <div class="wa-chat-popup" id="wa-chat-popup">
+            <div class="wa-chat-header">
+                <div class="wa-chat-header-info">
+                    <div class="wa-avatar">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                    </div>
+                    <div>
+                        <strong>APEX Computer</strong>
+                        <span class="wa-status"><span class="wa-online-dot"></span> Online</span>
+                    </div>
+                </div>
+                <button class="wa-chat-close" id="wa-chat-close" aria-label="Close chat">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <div class="wa-chat-body">
+                <div class="wa-chat-bg-pattern"></div>
+                <div class="wa-message-bubble">
+                    <p>Hello! 👋 Welcome to <strong>APEX Computer Training Center</strong>.</p>
+                    <p>How can we help you today? Ask about our courses, admissions, or anything else!</p>
+                    <span class="wa-msg-time">Just now</span>
+                </div>
+            </div>
+            <div class="wa-chat-footer">
+                <form id="wa-chat-form" class="wa-input-wrap">
+                    <input type="text" id="wa-chat-input" placeholder="Type a message..." autocomplete="off">
+                    <button type="submit" class="wa-send-btn" aria-label="Send on WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Floating Button -->
+        <button class="wa-fab" id="wa-fab" aria-label="Chat on WhatsApp">
+            <div class="wa-fab-pulse"></div>
+            <div class="wa-fab-pulse wa-fab-pulse-2"></div>
+            <svg class="wa-fab-icon" id="wa-fab-icon-wa" width="30" height="30" viewBox="0 0 24 24" fill="white">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <svg class="wa-fab-icon wa-fab-icon-close" id="wa-fab-icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" style="display:none;">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+            <span class="wa-fab-tooltip">Chat with us!</span>
+        </button>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
